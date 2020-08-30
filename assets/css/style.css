@@ -15,16 +15,17 @@ body {
     color: #ffffff;
 }
 
-.header h1 {
+/*.header*/ h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/* removed header description here, since seo is a class that's all that is needed*/
+.seo {
     color: #d9dcd6;
 }
 
-.header nav {
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,14 +33,16 @@ body {
     font-size: 20px;
 }
 
+/* commented this out because it didn't seem to add anything to the styling of the page
 nav ul {
     list-style-type: none;
-}
+}*/
 
 nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
+
 
 a {
     color: #ffffff;
@@ -59,6 +62,7 @@ p {
     background-position: center;
 }
 
+ 
 .float-left {
     float: left;
     margin-right: 25px;
@@ -73,6 +77,7 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    
 }
 
 .benefits {
@@ -85,8 +90,12 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align:center; 
     background-color: #2589bd;
+    margin-bottom: 32px;
+    color: #ffffff;
+    
 }
 
+/* was able to consolidate in benefits and page looked the same
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -100,8 +109,13 @@ p {
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
-}
+}*/
 
+h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* all o the h3 in the benefit class have the same style elements
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -115,7 +129,7 @@ p {
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
-}
+}*/
 
 .benefit-lead img {
     display: block;
@@ -135,6 +149,7 @@ p {
     max-width: 150px;
 }
 
+/* tried to consolidate these under content but it did not leave the page the same*/
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -142,6 +157,7 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    font-size: 36px;
 }
 
 .online-reputation-management {
@@ -151,6 +167,7 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    font-size: 36px;
 }
 
 .social-media-marketing {
@@ -160,8 +177,14 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    font-size: 36px;
 }
 
+/*all the images had the same height so I consildated that*/
+img{
+    max-height: 200px;
+}
+/*
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -172,8 +195,14 @@ p {
 
 .social-media-marketing img {
     max-height: 200px;
-}
+}*/
 
+/* consolidated all of the h2's*/
+.content h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/*
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -187,14 +216,14 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
+}*/
 
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-}
+  }
 
 .footer h2 {
     font-size: 20px;
